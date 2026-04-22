@@ -1,0 +1,12 @@
+.default-btn {
+    display: flex;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.102);
+    transition: all 0.3s ease;
+}
+
+.default-btn.light {
+    background-color: rgba(0, 0, 0, 0.024);
+}

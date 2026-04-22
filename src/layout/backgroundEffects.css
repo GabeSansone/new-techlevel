@@ -1,0 +1,87 @@
+#background-geral {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* TEMAS */
+#background-geral.dark {
+    background: #020617;
+}
+
+#background-geral.light {
+    background: #f8fafc;
+}
+
+/* CÍRCULOS BASE */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(circle, var(--color) 0%, transparent 70%);
+    opacity: 0.6;
+
+    animation: float 18s infinite ease-in-out alternate;
+}
+
+/* TAMANHOS MENORES */
+.c1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 10%;
+}
+
+.c2 {
+    width: 350px;
+    height: 350px;
+    top: 50%;
+    left: 60%;
+}
+
+.c3 {
+    width: 250px;
+    height: 250px;
+    bottom: 10%;
+    left: 20%;
+}
+
+/* CORES DINÂMICAS */
+.dark .c1 {
+    --color: #3b82f6;
+    opacity: 0.2;
+}
+
+.dark .c2 {
+    --color: #a855f7;
+    opacity: 0.2;
+}
+
+.dark .c3 {
+    --color: #ec4899;
+    opacity: 0.2;
+}
+
+.light .c1 {
+    --color: #9ca3af;
+}
+
+.light .c2 {
+    --color: #6b7280;
+}
+
+.light .c3 {
+    --color: #cbd5f5;
+}
+
+/* ANIMAÇÃO MAIS LEVE */
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(20px, -30px);
+    }
+}

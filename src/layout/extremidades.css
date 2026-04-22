@@ -1,0 +1,135 @@
+/* Header */
+
+header {
+    display: flex;
+    margin: 40px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+
+}
+
+#icon-col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+}
+
+.nav-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+.light .nav-bar a {
+    color: #030330;
+}
+
+.dark .nav-bar a {
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.footer-nav {
+    margin: 0 auto;
+    margin-left: 29%;
+}
+
+address {
+    opacity: 0.2;
+    padding: 0;
+}
+
+.light address {
+    color: #030330;
+}
+
+/* HAMBURGUER */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: currentColor;
+    border-radius: 5px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .header-nav {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        background: inherit;
+        padding: 20px 0;
+
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: 0.3s ease;
+    }
+
+    .header-nav.open {
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0);
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-nav li {
+        font-size: 14px;
+    }
+
+    address {
+        text-align: center;
+        font-size: 12px;
+        opacity: 0.6;
+    }
+}
