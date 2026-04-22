@@ -105,12 +105,12 @@ address {
         display: flex;
     }
 
-    .light .nav-bar a {
+    .nav-bar a {
         color: white;
     }
 
-    .dark .nav-bar a {
-        color: #030330;
+    .light .nav-bar a {
+        color: white;
     }
 
     .header-nav {
@@ -143,21 +143,11 @@ address {
         display: flex;
         justify-content: center;
         font-size: 15px;
-        background: rgba(255, 255, 255, 0.501);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-    }
-
-    .light .header-nav li {
-        background: rgba(0, 0, 0, 0.500);
+        background: rgba(0, 0, 0, 0.900);
     }
 
     .header-nav li:hover {
-        background: rgba(255, 255, 255, 0.500);
-    }
-
-    .light .header-nav li:hover {
-        background: rgba(0, 0, 0, 0.500);
+        background: rgba(0, 0, 0, 0.700);
     }
 
     .header-nav a {
