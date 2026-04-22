@@ -48,16 +48,16 @@ export function Header({ tema, setTema }) {
 export function Footer() {
     return (
         <footer>
-            <ul className="nav-bar footer-nav" style={{ listStyleType: "none" }}>
+            <ul className="nav-bar footer-nav">
                 <li><a href="#text-about">Sobre</a></li>
                 <li><a href="#product-section">Produtos</a></li>
                 <li><a href="#text-hostinger">Hostinger</a></li>
-                <li><a href="mailto:techleveloficial@gmail.com">Contate</a></li>
+                <li><a href="mailto:techleveloficial@gmail.com">Contato</a></li>
             </ul>
 
             <address>
                 <p>techleveloficial@gmail.com</p>
-                <p>55 51 1199-1199</p>
+                <p>+55 51 1199-1199</p>
             </address>
         </footer>
     )

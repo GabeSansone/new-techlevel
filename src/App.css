@@ -1,35 +1,126 @@
-/* Section 1 */
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* TEXTO EM DESTAQUE */
 span {
     font-weight: 800;
 }
 
+/* CONTAINER GERAL */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SECTION SOBRE */
 #text-about {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centraliza o bloco inteiro */
     width: 90vw;
+    margin: 40px auto;
     text-align: justify;
-    align-items: start;
-    flex-flow: column wrap;
-    margin: 40px;
+}
+
+/* AGRUPA h2 + p COM MESMA LARGURA */
+#text-about h2,
+#text-about p {
+    width: 70%;
+}
+
+/* AJUSTES */
+#text-about h2 {
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-align: left;
 }
 
 #text-about p {
-    width: 70%;
-    margin: 0 10%;
+    line-height: 1.6;
 }
 
-#text-about h2 {
-    margin: 2% 10%;
-    letter-spacing: 1px;
-}
-
-/* Hostinger */
-
+/* SECTION HOSTINGER */
 #text-hostinger {
     text-align: justify;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin: 100px;
+    margin: 100px auto;
+    width: 80%;
+}
+
+#text-hostinger img {
+    width: 100px;
+}
+
+/* TEMAS */
+.dark {
+    color: white;
+}
+
+.light {
+    color: #030330;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVO (MOBILE) */
+/* ========================= */
+@media (max-width: 768px) {
+
+    /* SOBRE */
+    #text-about {
+        width: 95vw;
+        margin: 20px auto;
+    }
+
+    #text-about p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    #text-about h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* HOSTINGER */
+    #text-hostinger {
+        flex-direction: column;
+        gap: 20px;
+        margin: 50px auto;
+        width: 95%;
+        text-align: center;
+    }
+
+    #text-hostinger p {
+        font-size: 14px;
+    }
+
+    #text-hostinger img {
+        width: 80px;
+    }
+}
+
+/* ========================= */
+/* 📱 MOBILE PEQUENO (até 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+
+    #text-about p,
+    #text-hostinger p {
+        font-size: 13px;
+    }
+
+    #text-about h2 {
+        font-size: 18px;
+    }
+
+    #text-hostinger img {
+        width: 70px;
+    }
 }

@@ -9,8 +9,8 @@ export function Mode({ tema, setTema }) {
             height: "40px",
         }}>
             <img className="default-switch" src={tema === "light" ? sun : moon} style={{
-                width: "25px",
-                height: "25px",
+                width: "30px",
+                height: "30px",
                 padding: "5px",
                 transform: tema === "light" ? "translateX(35px)" : "translateX(0px)",
                 transition: "all 0.3s ease"
