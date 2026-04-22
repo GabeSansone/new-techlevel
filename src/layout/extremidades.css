@@ -135,21 +135,21 @@ address {
         justify-content: center;
         font-size: 15px;
 
-        background: rgba(255, 255, 255, 0.06);
+        background: rgba(255, 255, 255, 0.501);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
     }
 
     .light .header-nav li {
-        background: rgba(0, 0, 0, 0.05);
+        background: rgba(0, 0, 0, 0.493);
     }
 
     .header-nav li:hover {
-        background: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.471);
     }
 
     .light .header-nav li:hover {
-        background: rgba(0, 0, 0, 0.08);
+        background: rgba(0, 0, 0, 0.498);
     }
 
     .header-nav a {
